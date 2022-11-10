@@ -1,5 +1,6 @@
-import { readFile } from 'fs/promises';
+import type { FastifyHelmetOptions } from '@fastify/helmet';
 import { default as json5 } from 'json5';
+import { readFile } from 'fs/promises';
 
 /**
  * Configuration schema
@@ -7,6 +8,7 @@ import { default as json5 } from 'json5';
 type Config = {
   log: boolean;
   port: number;
+  security?: FastifyHelmetOptions;
   limits?: {
     api: number;
     gateway: number;
