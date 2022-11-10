@@ -5,8 +5,8 @@ import { default as json5 } from 'json5';
  * Configuration schema
  */
 type Config = {
+  log: boolean;
   port: number;
-  logging: boolean;
   limits?: {
     api: number;
     gateway: number;
