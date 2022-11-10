@@ -6,8 +6,11 @@ import { default as json5 } from 'json5';
  */
 type Config = {
   port: number;
-  maxSize: number;
   logging: boolean;
+  limits?: {
+    api: number;
+    gateway: number;
+  };
 };
 
 /**
