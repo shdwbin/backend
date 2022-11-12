@@ -1,4 +1,4 @@
-# Shadowbin Backend
+# backend
 
 This repository contains the source code for [Shadowbin](https://shadowb.in)'s
 backend api server, storage, and auth.
